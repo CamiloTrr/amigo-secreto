@@ -14,10 +14,15 @@ function agregarAmigo() {
     if (nombreAmigos.length != 0) {
         let agregarNombre = nombreAmigos.push;
         console.table(nombreAmigos);
+        
     }else{
         alert("Por favor, inserte un nombre");
     }
+    limpiarcaja();
     return;
 }
 
+function limpiarcaja(){
+    document.querySelector('#amigo').value = '';
+}
 
