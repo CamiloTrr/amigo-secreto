@@ -11,10 +11,11 @@ function asignarTextoElemento(elemento, texto) {
 
 function agregarAmigo() {
     nombreAmigos = document.getElementById('amigo').value;
-    if (nombreAmigos.length === 0) {
-        alert("Por favor, inserte un nombre");
+    if (nombreAmigos.length != 0) {
+        let agregarNombre = nombreAmigos.push;
+        console.table(nombreAmigos);
     }else{
-        
+        alert("Por favor, inserte un nombre");
     }
     return;
 }
