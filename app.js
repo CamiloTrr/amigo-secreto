@@ -6,3 +6,7 @@ function asignarTextoElemento(elemento, texto) {
     elementohtml.innerHTML = texto;
     return;
 }
+
+function recibirNombre() {
+    let nombresDigitados = document.getElementById('amigo').value;
+}
