@@ -7,6 +7,16 @@ function asignarTextoElemento(elemento, texto) {
     return;
 }
 
-function recibirNombre() {
-    let nombresDigitados = document.getElementById('amigo').value;
+
+
+function agregarAmigo() {
+    nombreAmigos = document.getElementById('amigo').value;
+    if (nombreAmigos.length === 0) {
+        alert("Por favor, inserte un nombre");
+    }else{
+        
+    }
+    return;
 }
+
+
