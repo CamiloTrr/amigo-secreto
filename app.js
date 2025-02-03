@@ -14,6 +14,7 @@ function agregarAmigo() {
     if (nombreAmigos.length != 0) {
         let agregarNombre = nombreAmigos.push;
         console.table(nombreAmigos);
+        asignarTextoElemento('h3', `${nombreAmigos}`);
         
     }else{
         alert("Por favor, inserte un nombre");
@@ -22,7 +23,9 @@ function agregarAmigo() {
     return;
 }
 
+
 function limpiarcaja(){
     document.querySelector('#amigo').value = '';
+    document.getElementById('listadoAmigos').value = '';
 }
 
