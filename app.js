@@ -23,6 +23,22 @@ function actualizarListaAmigos() {
 
 }
 
+function sortearAmigo() {
+    
+    if (amigos.length != 0) {
+        let numeroAleatorio = Math.floor(Math.random()*amigos.length);
+        let amigoAleatorio = amigos[numeroAleatorio];
+        let resultadoAmigo = document.getElementById('resultado');
+        resultadoAmigo.innerHTML = `el amigo secreto sorteado es: ${amigoAleatorio}`;
+        let lista = document.getElementById('listaAmigos');
+        lista.innerHTML= "";
+
+    } else {
+        alert("La lista esta vacia");
+    }
+    
+}
+
 function limpiarCampo() {
     document.getElementById('amigo').value = '';
 }
